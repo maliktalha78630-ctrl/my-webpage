@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎂 Happy Birthday Madam Gee!</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #fceabb, #f8b500);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em
+      margin-top: 60px;
+      color: #fff;
+      text-shadow: 2px 2px 5px #ff69b4;
+      animation: blink 1s infinite;
+    }
+h1 {
+      text-align: center;
+font-size: 2em
+color: purple;
+ }
+
+p1 {
+      text-align: center;
+ }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-110vh) rotate(360deg); }
+    }
+
+    .string {
+      width: 2px;
+      height: 50px;
+      background: #333;
+      margin: auto;
+      margin-top: -10px;
+    }
+
+    .light {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: yellow;
+      animation: light-blink 1s infinite alternate;
+    }
+
+    @keyframes light-blink {
+      0% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday, [Mallia ❤️🎂]</h1>
+<h1>🎉 Happy Birthday, [Mallia ❤️🎂]</h1>
+<h1>🎉 Happy Birthday, [My Love ❤️🎂]</h1>
+
+<div style="text-align: center;">
+  <p>
+    Today isn’t just the day you were born—it’s the day the world unknowingly prepared someone perfectly made for me.  
+    Every moment with you feels like home, every glance like a promise, and every laugh like music that plays only for us.
+  </p>
+  <p>
+<div style="text-align: center; margin-top: 30px;">
+  <p>
+    On this special day, I just want you to know—loving you is the easiest thing I've ever done,  
+    and spending forever with you is the only dream I want to chase.
+  </p>
+
+  <p>
+    You are the reason my world feels steady, my heart feels full,  
+    and my future feels bright. Happy Birthday, my love.
+  </p>
+
+  <p>
+    Every birthday of yours feels like a gift to me—because it's one more year  
+    I get to love you, grow with you, and walk beside you.
+  </p>
+
+  <p>
+    No matter how many candles are on your cake, you'll always be the light of my life.  
+    Here's to all the memories we've made—and the beautiful ones still to come.
+  </p>
+
+  <p>
+    I didn’t just fall in love with you—I chose you.  
+    And on your birthday, I choose you all over again. Always.
+  </p>
+</div>
+
+<h1>ONCE AGAIN 🎉 Happy Birthday, [MERI JAAN ❤️🎂]</h1>
+
+
+  <!-- JavaScript will generate balloons and lights -->
+  <script>
+    const colors = ['red', 'blue', 'green', 'pink', 'purple', 'orange'];
+    
+    // Create Balloons
+    for (let i = 0; i < 20; i++) {
+      let balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      balloon.style.left = Math.random() * 100 + 'vw';
+      balloon.style.animationDuration = 6 + Math.random() * 5 + 's';
+      let string = document.createElement('div');
+      string.className = 'string';
+      balloon.appendChild(string);
+      document.body.appendChild(balloon);
+    }
+
+    // Create Lights
+    for (let i = 0; i < 30; i++) {
+      let light = document.createElement('div');
+      light.className = 'light';
+      light.style.left = (i * 3 + 1) + '%';
+      light.style.top = '20px';
+      light.style.backgroundColor = colors[i % colors.length];
+      light.style.animationDelay = (Math.random() * 2) + 's';
+      document.body.appendChild(light);
+    }
+  </script>
+</body>
+</html>
